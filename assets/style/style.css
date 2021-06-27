@@ -79,7 +79,6 @@ body{
   border-right: none;
   padding: 10px;
   height: 25px;
-  color: #9DBFAF;
 }
 
 .searchIcon {
@@ -105,4 +104,53 @@ body{
 }
 .wrap{
   width: 35%;
+}
+
+/* Filter */
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-text{
+  margin-right: 32px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.filter{
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+  padding-right: 30px;
+  font-size: 15px;
+  border: 2px solid #efefef;
+  border-radius: 50px;
+  border-left: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.filter button{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #DEEBFF;
+  border-right: none;
+  background: #DEEBFF;
+  text-align: center;
+  border-radius: 50px;
+  color: #0065FC;
+}
+
+/* info */
+
+.info button{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #efefef;
+  border-radius: 50px;
+  margin: 10px 10px 0 0;
+  color: #0065FC;
+  background: #fff;
 }

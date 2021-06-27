@@ -15,3 +15,40 @@ body{
   padding: 10px 10px 0 40px;
 }
 
+/* MAIN NAV */
+
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px 0 0;
+}
+
+.main-nav>img{
+  width: 100px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav ul li{
+  text-transform: capitalize;
+  margin: 0 20px 0 35px;
+}
+
+.main-nav ul li:last-of-type{
+  color: blue;
+  cursor: pointer;
+}
+
+.main-nav li a{
+  text-decoration: none;
+  color: gray;
+}
+
+.main-nav li a:focus{
+  color: #0065FC;
+  border-top: solid 2px #0065FC;
+  padding: 30px;
+}

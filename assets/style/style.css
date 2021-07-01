@@ -63,7 +63,7 @@ body{
 
 .sub-nav p{
   font-size: 13px;
-  margin-top: -7px;
+  margin: 10px 0 10px 0;
 }
 
 /* SEARCH BAR */
@@ -187,14 +187,14 @@ body{
 }
 
 .column h3{
-  margin-left: 10px;
+  margin: 15px 0 15px 10px;
 }
 
 .card_01{
   background: #fff;
   position:relative;
   flex: 1;
-  margin: 10px 10px 32px 10px;
+  margin: 30px 10px 10px 10px;
   padding: 5px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -206,7 +206,7 @@ body{
   transform: scale(1.1);
 }
 .card_01 img{
-    height: 130px;
+    height:140px;
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -249,7 +249,7 @@ body{
   flex: 1;
 }
 .col img{
-  width: 120px;
+  width: 130px;
   height: 150px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -257,15 +257,18 @@ body{
 }
 .col h4{
   font-size: 15px;
+  margin-top: 12px;
 }
 .col p{
   font-size: 13px;
+  margin-top: 12px;
+
 }
 .col p span{
   font-weight: bold;
 }
 .col button{
-  margin-top: 40px;
+  margin-top: 50px;
   border: none;
   background:none;
   color: #0065FC;
@@ -273,9 +276,8 @@ body{
 
 /* ACTIVITE */
 .activite-title{
-  margin-left: 10px;
   text-align:left;
-  margin-top: 70px;
+  margin: 70px 0 20px 15px;
 }
 
 .wrapper {
@@ -347,3 +349,37 @@ body{
   object-fit: cover;
 }
 
+/* FOOTER */
+
+footer{
+  width:100%;
+  bottom:0;
+  left:0;
+  flex: 0;
+  background-color: #efefef;
+}
+  
+footer>div{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px 70px;
+}
+  
+footer>div>p{
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+footer>div>div>p{
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+footer h5{
+  color:#444444;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  text-transform: capitalize;
+}

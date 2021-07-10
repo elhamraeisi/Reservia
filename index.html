@@ -8,6 +8,7 @@
   <title>Reservia</title>
   <link rel="stylesheet" href="assets/style/style.css">
   <link rel="stylesheet" href="assets/style/reset.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="assets/style/mobile.css">
   <link rel="stylesheet" href="assets/style/all.min.css">
 </head>
 
@@ -15,13 +16,23 @@
   <div class="container">
     <!-- MAIN NAV -->
     <nav class="main-nav">
-      <img src="assets/images/Reservia.svg" alt="Logo">
-      <ul>
-        <li><a href="#hebergements">hébergements</li></a>
-        <li><a href="#activite">activités</li></a>
-        <li>s'inscrire</li>
-      </ul>
+      <div id="logo">
+        <img src="assets/images/Reservia.svg" alt="Logo">
+      </div>
+
+      <div id="hebergement-nav">
+        <a href="#hebergements">hébergements</a>
+      </div>
+
+      <div id="activite-nav">
+        <a href="#activite">activités</a>
+      </div>
+
+      <div id="login-nav">
+        <a class="register-button" href="#">s'inscrire</a>
+      </div>
     </nav>
+
 
     <!-- SEARCH -->
     <section>
@@ -31,9 +42,9 @@
         <div class="wrap">
           <div class="search">
             <button class="searchIcon"><i class="fas fa-map-marker-alt"></i></button>
-            <input type="text" placeholder="Selection votre ville">
+            <input type="text" placeholder="Marseille,France">
             <button type="submit" class="searchButton">
-              Rechercher
+
             </button>
           </div>
         </div>
@@ -73,7 +84,7 @@
       <div class="flex-body">
         <div class="column left">
           <h2 id="hebergements">Hébergements à Marseille</h2>
-          <div class="row">
+          <div class="column-hebergement">
             <div class="card_01">
               <img src="assets/images/hebergements/1_xlarge/marcus.jpg" alt="hotel_01" />
               <h4>Auberge la Cannebière</h4>
@@ -96,7 +107,7 @@
                   class="fas fa-star"></i><i class="far fa-star"></i></button>
             </div>
           </div>
-          <div class="row">
+          <div class="column-hebergement">
             <div class="card_01">
               <img src="assets/images/hebergements/1_xlarge/annie.jpg" alt="hotel_04" />
               <h4>Hôtel de la mer</h4>
@@ -210,12 +221,17 @@
             <h4>Parc Longchamp</h4>
           </div>
         </div>
+
+
+
       </div>
+
+
     </section>
   </div>
 
   <!-- FOOTER -->
-  <footer>
+  <FOOTER>
     <div>
       <div>
         <h5>a propose</h5>
@@ -234,7 +250,8 @@
         <p>nous contacter</p>
       </div>
     </div>
-  </footer>
+
+  </FOOTER>
 </body>
 
 </html>

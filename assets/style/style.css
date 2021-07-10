@@ -3,20 +3,19 @@
   src: url('../fonts/Raleway-ExtraBold.ttf');
   font-weight: bold;
 }
-
 @font-face {
   font-family: 'Raleway';
   src: url('../fonts/Raleway-Regular.ttf');
   font-weight: normal;
-
 }
-
 body{
   font-family: 'Raleway', sans-serif;
 }
-
 .container{
   padding: 10px 40px 0 40px;
+  /* 4k ULTRA TELEVISION */
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* MAIN NAV */
@@ -24,43 +23,34 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px 0 0;
 }
-
-.main-nav>img{
-  width: 100px;
+.main-nav div:first-child {
+  flex: 2;
 }
-
-.main-nav li {
-  display: inline-block;
-}
-
-.main-nav ul li{
+.main-nav div a{
   text-transform: capitalize;
   margin: 0 20px 0 35px;
 }
-
-.main-nav ul li:last-of-type{
-  color: blue;
+.register-button{
+  text-decoration: none;
+  border-top: none !important;
+  color: #0065FC;
   cursor: pointer;
 }
-
-.main-nav li a{
+.main-nav div:not(:last-child) a{
   text-decoration: none;
   color: gray;
+  padding: 10px;
 }
-
-.main-nav li a:focus{
+.main-nav div a:hover{
   color: #0065FC;
   border-top: solid 2px #0065FC;
-  padding: 30px;
 }
 
 /* SUB NAV */
 .sub-nav{
   margin-top: 35px;
 }
-
 .sub-nav p{
   font-size: 13px;
   margin: 10px 0 10px 0;
@@ -69,20 +59,18 @@ body{
 /* SEARCH BAR */
 .search {
   width: 100%;
-  position: relative;
   display: flex;
   padding-top: 5px;
 }
-
 .search input {
   width: 100%;
   border: 1px solid #efefef;
   border-left: none;
   border-right: none;
   padding: 10px;
-  height: 25px;
+  font-size: 17px;
+  font-weight: bold;
 }
-
 .searchIcon {
   width: 80px;
   height: 47px;
@@ -92,8 +80,8 @@ body{
   text-align: center;
   border-radius: 16px 0 0 16px;
 }
-
 .searchButton {
+  float: right;
   width: 190px;
   height: 47px;
   border: 1px solid #0065FC;
@@ -104,7 +92,9 @@ body{
   cursor: pointer;
   font-size: 15px;
 }
-
+.searchButton::after {
+content: "Rechercher";
+}
 .wrap{
   width: 35%;
 }
@@ -114,13 +104,11 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
-
 .filter-text{
   margin-right: 32px;
   margin-top: 40px;
   font-weight: bold;
 }
-
 .filter{
   text-transform: capitalize;
   font-weight: bold;
@@ -133,7 +121,6 @@ body{
   margin-right: 40px;
   cursor: pointer;
 }
-
 .filter button{
   width: 40px;
   height: 40px;
@@ -146,12 +133,14 @@ body{
 }
 
 /* info */
+.info{
+  padding-top: 20px;
+}
 .info button{
   width: 30px;
   height: 30px;
   border: 2px solid #efefef;
   border-radius: 50px;
-  margin: 10px 10px 0 0;
   color: #0065FC;
   background: #fff;
 }
@@ -173,7 +162,7 @@ body{
 }
 
 .right {
-  width: 26%;
+  width: 29%;
   background: #efefef;
 }
 
@@ -189,7 +178,10 @@ body{
 .column h3{
   margin: 15px 0 15px 10px;
 }
-
+.column-hebergement{
+  display: flex;
+  flex-wrap: wrap;
+}
 .card_01{
   background: #fff;
   position:relative;
@@ -249,7 +241,7 @@ body{
   flex: 1;
 }
 .col img{
-  width: 130px;
+  width: 140px;
   height: 150px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -267,8 +259,11 @@ body{
 .col p span{
   font-weight: bold;
 }
+
 .col button{
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
   border: none;
   background:none;
   color: #0065FC;
@@ -282,7 +277,6 @@ body{
 
 .wrapper {
   display: flex;
-  height: 400px;
   margin-bottom: 50px;
 }
 
@@ -318,7 +312,7 @@ body{
 
 .item h4{
   font-size: 15px;
-  margin: 15px 0 0 18px;
+  margin: 15px 0 15px 18px;
 }
 
 .img_activite_big{
@@ -334,7 +328,7 @@ body{
 }
 
 .img_activite_small{
-  height: 70px;
+  height: 80px;
   width: 100%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -350,32 +344,26 @@ body{
 }
 
 /* FOOTER */
-
 footer{
-  width:100%;
-  bottom:0;
-  left:0;
   flex: 0;
   background-color: #efefef;
-}
-  
+  max-width: 1440px;
+  margin: 0 auto !important;
+} 
 footer>div{
   width: 80%;
   display: flex;
   justify-content: space-between;
   padding: 30px 0 30px 70px;
 }
-  
 footer>div>p{
   margin-bottom: 7px;
   text-transform: capitalize;
 }
-
 footer>div>div>p{
   margin-bottom: 7px;
   text-transform: capitalize;
 }
-
 footer h5{
   color:#444444;
   font-size: 20px;
@@ -383,3 +371,4 @@ footer h5{
   text-align: left;
   text-transform: capitalize;
 }
+

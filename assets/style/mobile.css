@@ -1,0 +1,170 @@
+.container{
+  padding: 0 ;
+}
+
+/* MAIN NAV */
+.main-nav{
+  display: grid;
+  grid-template-columns : 1fr 1fr;
+  grid-template-rows : 1fr 1fr;
+  padding: 10px 5px 0 5px;
+  grid-template-areas:
+  "logo login-nav"
+  "hebergement-nav activite-nav";
+}
+.main-nav div:nth-child(1) {
+  grid-area: logo;
+}
+.main-nav div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  grid-area: hebergement-nav;
+}
+.main-nav div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  grid-area: activite-nav;
+}
+.main-nav div:nth-child(4) {
+  grid-area: login-nav;
+}
+.main-nav div a{
+  text-transform: capitalize;
+  margin: 0 0;
+  font-weight: bold;
+}
+.register-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav div:not(:last-child) a{
+  border-bottom: solid 3px gainsboro;
+  padding: 15px;
+  border-top:  none;
+  box-sizing: border-box;
+  width: 100%; 
+  text-align: center;
+}
+.main-nav div a:hover{
+  border-bottom: solid 3px #0065FC;
+  border-top:  none;
+}
+#hebergement-nav a{
+  color: #0065FC;
+  border-bottom: solid 3px #0065FC;
+}
+#login-nav a{
+  border-bottom: none;
+}
+
+/* SUB NAV */
+.sub-nav{
+  margin-top: 20px;
+  padding:0 15px 0 15px
+}
+
+/* SEARCH BAR */
+.wrap{
+  width: 100%;
+}
+.searchIcon i{
+  font-size: 1.33em	;
+}
+.search input {
+  width: 70%;
+}
+.searchButton {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  border-radius: 16px 16px 16px 16px;
+}
+.searchButton::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+   content: "\f002"
+}
+
+/* Filter */
+.filter-text{
+  display: inline-block;
+  width: 100%;
+  padding:0 15px 0 15px
+}
+.filter{
+  margin: 10px 15px 5px 15px;
+}
+
+/* info */
+.info{
+  padding:15px 15px 15px 15px
+}
+
+/* Box */
+.flex-body{
+  flex-direction: column-reverse;
+}
+.column {
+  margin: 0;
+  padding: 30px 10px 30px 10px;
+  border-radius: 0;
+}
+.left {
+  width: 95%;
+  background: #ffffff;
+}
+.right {
+  width: 95%;
+}
+.card_01{
+  flex-direction: column;
+}
+.col img{
+  width: 150px;
+}
+.column-hebergement{
+  display: contents;
+}
+.column h3{
+  margin: 40px 0 15px 10px;
+}
+
+/* ACTIVITE */
+.wrapper {
+  flex-direction: column;
+}
+.column-activite {
+  display: contents;
+}
+.img_activite{
+  height: 130px;
+}
+.img_activite_big{
+  height: 130px;
+}
+.img_activite_small{
+  height: 130px;
+}
+.img_activite_medium{
+  height: 130px;
+}
+.item h4{
+  margin: 15px 0 15px 18px;
+}
+
+/* FOOTER */
+footer{
+  bottom:none;
+  left:none;
+  flex: 0;
+  background-color: #efefef;
+}
+footer>div{
+  flex-direction: column;
+}
+footer>div>div>p{
+  margin-bottom: 15px;
+}
+footer h5{
+  margin: 25px 0 25px 0;
+}

@@ -1,0 +1,139 @@
+.container{
+  padding: 0 ;
+}
+
+/* MAIN NAV */
+.main-nav{
+  display: grid;
+  grid-template-columns : 1fr 1fr;
+  grid-template-rows : 1fr 1fr;
+  padding: 10px 5px 0 5px;
+  grid-template-areas:
+  "logo login-nav"
+  "hebergement-nav activite-nav";
+}
+.main-nav div:nth-child(1) {
+  grid-area: logo;
+}
+.main-nav div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  grid-area: hebergement-nav;
+}
+.main-nav div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  grid-area: activite-nav;
+}
+.main-nav div:nth-child(4) {
+  grid-area: login-nav;
+}
+.main-nav div a{
+  margin: 0 0;
+  font-weight: bold;
+}
+.register-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav div:not(:last-child) a{
+  border-bottom: solid 3px gainsboro;
+  padding: 15px;
+  border-top:  none;
+  box-sizing: border-box;
+  width: 100%; 
+  text-align: center;
+}
+.main-nav div a:hover{
+  border-bottom: solid 3px #0065FC;
+  border-top:  none;
+}
+#hebergement-nav a{
+  color: #0065FC;
+  border-bottom: solid 3px #0065FC;
+}
+#login-nav a{
+  border-bottom: none;
+}
+
+/* SUB NAV */
+.sub-nav{
+  margin-top: 20px;
+  padding:0 15px 0 15px
+}
+
+/* SEARCH BAR */
+.wrap{
+  width: 70%;
+  position: relative;
+
+}
+.searchIcon i{
+  font-size: 1.33em	;
+}
+.search input {
+  width: 75%;
+}
+.searchButton {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  border-radius: 16px 16px 16px 16px;
+}
+.searchButton::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+   content: "\f002"
+}
+/* Filter */
+.filter-text{
+  display: inline-block;
+  width: 100%;
+  padding:0 15px 0 15px
+}
+
+.filter{
+  margin: 10px 15px 5px 15px;
+}
+
+/* info */
+.info{
+  padding: 20px 0 0 15px;
+}
+
+/* Box */
+.flex-body{
+  flex-wrap: wrap;
+}
+.left {
+  width: 100%;
+}
+.right {
+  width: 100%;
+}
+.col img{
+  width: 280px;
+}
+
+/* ACTIVITE */
+
+.wrapper {
+  flex-wrap: wrap;
+}
+.column-activite {
+  flex: none;
+  flex-grow: 1;
+  width: 50%;
+}
+
+/* FOOTER */
+footer{
+  bottom:none;
+  left:none;
+}
+footer h5{
+  margin: 25px 0 25px 0;
+}
+footer>div>div>p{
+  margin-bottom: 15px;
+}

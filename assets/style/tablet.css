@@ -35,12 +35,11 @@
 .register-button{
   display: flex;
   justify-content: flex-end;
+
 }
 .main-nav div:not(:last-child) a{
   border-bottom: solid 3px gainsboro;
   padding: 15px;
-  border-top:  none;
-  box-sizing: border-box;
   width: 100%; 
   text-align: center;
 }
@@ -78,7 +77,7 @@
   position: absolute;
   right: 0;
   width: 50px;
-  border-radius: 16px 16px 16px 16px;
+  border-radius: 16px;
 }
 .searchButton::after {
   font-family: "Font Awesome 5 Free"; 
@@ -87,7 +86,6 @@
 }
 /* Filter */
 .filter-text{
-  display: inline-block;
   width: 100%;
   padding:0 15px 0 15px
 }
@@ -116,24 +114,10 @@
 }
 
 /* ACTIVITE */
-
 .wrapper {
   flex-wrap: wrap;
 }
 .column-activite {
   flex: none;
-  flex-grow: 1;
   width: 50%;
-}
-
-/* FOOTER */
-footer{
-  bottom:none;
-  left:none;
-}
-footer h5{
-  margin: 25px 0 25px 0;
-}
-footer>div>div>p{
-  margin-bottom: 15px;
 }
